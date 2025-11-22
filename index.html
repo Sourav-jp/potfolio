@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">YourName</a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content" data-aos="fade-up">
+        <img src="images/profile.jpg" alt="Profile" class="hero-img">
+        <h1>Your Name</h1>
+        <p class="tagline">Front-End Developer</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container" data-aos="fade-right">
+        <h2><i class="fa-solid fa-user"></i> About Me</h2>
+        <p>
+            I am a passionate front-end developer who loves creating beautiful and functional websites.
+        </p>
+        <div class="skills">
+          <div class="skill">
+            <span>HTML</span>
+            <div class="progress-bar" data-percent="90%"></div>
+          </div>
+          <div class="skill">
+            <span>CSS / SCSS</span>
+            <div class="progress-bar" data-percent="85%"></div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar" data-percent="80%"></div>
+          </div>
+        </div>
+        <a href="assets/YourCV.pdf" class="btn" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container" data-aos="fade-left">
+        <h2><i class="fa-solid fa-gears"></i> Services</h2>
+        <div class="services-list">
+          <div class="service-item">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Building responsive, high-performance websites and web apps.</p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-object-ungroup"></i>
+            <h3>UI/UX Design</h3>
+            <p>Designing sleek, user-focused interfaces.</p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-mobile"></i>
+            <h3>Mobile Friendly</h3>
+            <p>Ensuring seamless experience on all devices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container" data-aos="fade-up">
+        <h2><i class="fa-solid fa-briefcase"></i> Portfolio</h2>
+        <div class="portfolio-list">
+          <div class="portfolio-item" onclick="openModal('images/project1.jpg')">
+            <img src="images/project1-thumb.jpg" alt="Project 1">
+            <div class="portfolio-overlay">
+              <h3>Project Name</h3>
+            </div>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container" data-aos="fade-right">
+        <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> youremail@example.com</p>
+          <p>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        &copy; 2025 Your Name | All rights reserved
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
